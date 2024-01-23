@@ -1,0 +1,9 @@
+[submodule "caravel_board"]
+	path = caravel_board
+	url = git@github.com:efabless/caravel_board.git
+[submodule "caravel_hack_soc"]
+	path = caravel_hack_soc
+	url = git@github.com:mbalestrini/caravel_hack_soc.git
+[submodule "hack_soc"]
+	path = hack_soc
+	url = git@github.com:mbalestrini/hack_soc.git
