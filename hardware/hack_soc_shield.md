@@ -1,3 +1,4 @@
+- Put some jumpers (on some switches) on the SRAM CS pin, to be able to use another device (an fpga) instead of the memory
 - ~~Connect caravel `gpio` pin to a LED?~~
 - ~~Change J2 connection on caravel board to female header and male pins on this shield board~~
 - ~~Add a row of test pins or headers connected to ground~~
@@ -15,11 +16,4 @@ Extras
 - Add caravel button to caravel RST_N ? 
 - PS2 keyboard to caravel connector?
 
-### Shopping List
-- Placa virgen doble faz?
-- 4x 1x40 Header pins: https://www.microelectronicash.com/tpl1x40--det--TPL1X40
-- 20x CAPACITOR SMD 0.1uF 50V - C1206-0.1 : https://www.microelectronicash.com/c1206-0-1--det--C1206-0.1
-- 20x CAPACITOR SMD 10nF 50V - C1206-0.01 : https://www.microelectronicash.com/c1206-0-01--det--C1206-0.01
-- RESISTOR SMD 82E - R1206-82 : https://www.microelectronicash.com/r1206-82--det--R1206-82
-- RESISTOR SMD 10K - R1206-10k : https://www.microelectronicash.com/r1206-10k--det--R1206-10K
 
