@@ -1,3 +1,4 @@
+- Correct the J2 pin alignment. On board v0.1 they didn't match with the caravel board
 - Think which pins or parts we loose access if we make a stack up board that covers the caravel board: J2 serial toggle, blinking leds, reset button?
 - For now leave video output as just pins (no VGA connector or driver chip). Maybe prepare some pins to do an add on board for video? 
 - ~~Put some jumpers (or some switches) on the SRAM CS pin, to be able to use another device (an fpga) instead of the memory~~

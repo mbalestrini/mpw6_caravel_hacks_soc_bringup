@@ -14,8 +14,10 @@
 // #include "../hack_programs/FillVram_to16390.c"
 // #include "../hack_programs/test_gpio.c"
 // #include "../hack_programs/test_gpio_2.c"
-#include "../hack_programs/test_gpio_mem_1.c"
+// #include "../hack_programs/test_gpio_mem_1.c"
 // #include "../hack_programs/test_gpio_mem_2.c"
+// #include "../hack_programs/PongL.c"
+#include "../hack_programs/terminal2.c"
 
 #define MULTIPROJECT_ID 11
 
