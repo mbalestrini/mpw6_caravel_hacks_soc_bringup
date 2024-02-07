@@ -24,7 +24,7 @@ hex:  ${PATTERN:=.hex}
 
 %.elf: %.c $(CB_PATH)sections.lds $(CB_PATH)crt0_vex.S
 	#$(TOOLCHAIN_PATH)riscv32-unknown-elf-gcc -O0 -march=rv32i -Wl,-Bstatic,-T,$(CB_PATH)sections.lds,--strip-debug -ffreestanding -nostdlib -o $@ $(CB_PATH)start.s $(CB_PATH)print_io.c $<
-	$(TOOLCHAIN_PATH)$(TOOLCHAIN_PREFIX)-gcc -I$(CB_PATH) -I$(CB_PATH)generated/ -O0 -mabi=ilp32 -march=$(ARCH) -D__vexriscv__ -Wl,-Bstatic,-T,$(CB_PATH)sections.lds,--strip-debug -ffreestanding -nostdlib -o $@ $(CB_PATH)crt0_vex.S $(CB_PATH)isr.c $(CB_PATH)stub.c $<
+	$(TOOLCHAIN_PATH)$(TOOLCHAIN_PREFIX)-gcc -I$(CB_PATH) -I$(CB_PATH)generated/ -O0 -mabi=ilp32 -march=$(ARCH) -D__vexriscv__ -Wl,-Bstatic,-T,$(CB_PATH)sections.lds,--strip-debug -ffreestanding -nostdlib -o $@ $(CB_PATH)crt0_vex.S $(CB_PATH)isr.c $(CB_PATH)stub.c $< -lgcc 
 	${TOOLCHAIN_PATH}$(TOOLCHAIN_PREFIX)-objdump -D hack_soc_first_test.elf > hack_soc_first_test.lst
 
 %.hex: %.elf
